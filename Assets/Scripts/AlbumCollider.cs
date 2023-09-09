@@ -1,11 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class AlbumCollider : MonoBehaviour
 {
     public int expectedObjects = 20;
     public int objectsInZone = 0;
+
+    public TMP_Text score;
+
+    private void Start()
+    {
+
+    }
     
     
     private void OnTriggerEnter(Collider other)
@@ -16,6 +25,7 @@ public class AlbumCollider : MonoBehaviour
         || other.CompareTag("awkif") || other.CompareTag("wcpgw") || other.CompareTag("sunburn") || other.CompareTag("soad") || other.CompareTag("loathe"))
         {
             objectsInZone++;
+            score.text = objectsInZone + "/20";
             CheckAllObjectsInZone();
         }
     }
@@ -28,6 +38,7 @@ public class AlbumCollider : MonoBehaviour
         || other.CompareTag("awkif") || other.CompareTag("wcpgw") || other.CompareTag("sunburn") || other.CompareTag("soad") || other.CompareTag("loathe"))
         {
             objectsInZone--;
+            score.text = objectsInZone + "/20";
             CheckAllObjectsInZone();
         }
     }
