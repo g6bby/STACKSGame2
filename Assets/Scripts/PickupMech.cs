@@ -18,7 +18,7 @@ public class PickupMech : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             if(CurrentObject)
             {
