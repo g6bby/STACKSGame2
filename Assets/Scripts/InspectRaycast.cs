@@ -79,8 +79,8 @@ public class InspectRaycast : MonoBehaviour
 
             if(hit.collider.CompareTag("btw"))
             {
-                songName.text = "Born This Way";
-                artistName.text = "Lady Gaga";
+                songName.text = "Jar";
+                artistName.text = "Superheaven";
             }
 
             if(hit.collider.CompareTag("let"))
