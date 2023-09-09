@@ -7,7 +7,7 @@ using TMPro;
 public class InspectRaycast : MonoBehaviour
 {
     
-    [SerializeField] private float rayLength = 1.5f;
+    [SerializeField] private float rayLength = 2.5f;
     [SerializeField] private LayerMask PickupMask;
     
 
